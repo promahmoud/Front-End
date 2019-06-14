@@ -1,0 +1,33 @@
+/*Smart phones and Tablets*/
+@media (max-width:767px){
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+        background-color:#E41B17;
+        color:#fff;
+        padding-left: 30px;
+    }
+    
+    /*To remove Scroll in Mobile (navbar)*/
+    .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {max-height: none}
+    /* Section supscribe*/
+    .supscribe .form-control {margin: 16px auto;width: 400px}
+    /*indicators*/
+    .testimonials .carousel-inner {min-height: 105px}
+    .testimonials .carousel-indicators li {width:40px;height: 40px}
+    .testimonials .carousel-indicators li.active {width:40px;height: 40px}
+    /*Section clients*/
+    .clients ul img {margin-bottom: 30px}
+    
+}
+/*Small Screen*/
+@media (min-width:768px) and (max-width:991px){
+    
+}
+/*Medium Screen*/
+@media (min-width:992px) and(max-width:1199){
+    
+}
+/*Large Screen*/
+@media(min-width:1200px){
+    
+}
+    

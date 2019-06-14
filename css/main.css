@@ -1,0 +1,384 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{padding-top: 30px;overflow: hidden}
+ /*Start Section Tool box*/
+.Setting{
+    position: fixed;
+    top:100px;
+    left:0;
+    z-index: 10000;
+}
+.Setting .box_color{
+    background: #1b1919;
+    width:200px;
+    padding:10px;
+    color:#fff;
+    float: left;
+    display: none;
+}
+.Setting .box_color h4{font-weight: bold;color: #f5cfcf}
+.Setting .box_color h4::after{
+    content: "";
+    width:75%;
+    display: block;
+    border:1px solid #6d6262;
+    position: relative;
+    top: 3px
+}
+.Setting .box_color ul li{
+    width:20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 3px;
+    margin-top: 10px;
+    cursor: pointer
+}
+.Setting .glyphicon{
+    font-size: 40px;
+    color:#fff;
+    padding: 10px;
+    border-radius: 1px;
+    opacity: .5;
+    transition: all .5s ease;
+}
+.Setting .glyphicon:hover{opacity: 1;cursor: pointer}
+ /*-------------------End Section Tool box-----------*/
+/*Start Nav bar*/
+
+.navbar-brand {font-size: 30px}
+.navbar-inverse .navbar-nav > li > a {font-size: 18px;color:#f1dede}
+.dropdown-menu {
+    color:#fff;
+    min-width: 205px;
+    left:0 !important;
+    right: auto !important;
+}
+.dropdown-menu {background-color: #222222}
+.dropdown-menu > li > a{
+    color:#fff;
+    padding: 6px 20px;
+    font-size: 18px;
+    -wibkit-transition: padding .5s ease;
+    -moz-transition: padding .5s ease;
+    -o-transition: padding .5s ease;
+     transition: padding .5s ease;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {color:#fff;padding-left: 30px}
+.dropdown-menu .divider {background-color: #d08f8f}
+/*End Navbar and Dropdown*/
+/*Start carousel*/
+.carousel-caption {bottom: 110px;background-color:rgba(3,3,3,.3)}
+/*End carousel*/
+/*Start section About*/
+.about{padding-top:60px;padding-bottom:60px}
+.about .lead{
+    color:#888;
+    font-size:20px;
+    margin-top:15px;
+}
+.about h1{ font-weight: bold}
+
+/*End section About*/
+/*Start section Features*/
+.features{
+    background-color:#EEE;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.features .feet p{ line-height: 1.7em; text-align: justify}
+.features .feet span.glyphicon{ font-size: 25px; margin-bottom: 10px}
+/*End section Features*/
+/*Start section testimonials*/
+.testimonials{ padding-top:50px; padding-bottom: 50px}
+.testimonials .h1{ font-weight:bold; margin-bottom:20px}
+.testimonials .lead{ line-height: 2em; margin-bottom:10px}
+.testimonials span{font-size:18px;font-weight: bold}
+.testimonials .carousel-inner{min-height:160px}
+.testimonials .carousel-indicators{width:100%;position: static;margin-left: auto}
+.testimonials .carousel-indicators li{
+    text-indent: 0;
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    opacity: .5;
+    overflow: hidden;
+    margin-left: 10px;
+}
+.testimonials .carousel-indicators li.active{
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+    background: none
+}
+.testimonials .carousel-indicators li img{
+    max-width:100%;
+    height: 100%;
+    border-radius: 50%;
+    padding:1px;
+}
+
+/*End section Testimonials*/
+/*Start Section price Table*/
+.price{
+    background: #EEE;
+    padding-top:40px;
+    padding-bottom: 40px;
+}
+.price .h1{ margin-bottom: 70px}
+.price .price_box{
+    background:#fff;
+    padding:10px;
+    border:1px solid #ddd;
+    margin-bottom: 20px;
+    position: relative;
+    transition: all 5s ease;
+    border-radius: 20px;
+}
+.price .price_box:hover{
+    animation-name: moving;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+.price .price_box:hover p{ transform: scale(1.1,1.1)rotate(360deg)}
+.price .price_box h2{
+    margin: 5px 0 15px ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.price .price_box p{
+    font-size: 35px;
+    font-weight: bold;
+    color:#666;
+    width:100px;
+    height: 100px;
+    background: #F3F3F3;
+    border-radius: 50%;
+    line-height: 100px;
+    transition-duration: .5s;
+}
+.price .price_box ul{
+    line-height: 250%;
+    font-size: 18px;
+    font-weight: bold
+}
+.price .price_box button{margin-bottom: 5px}
+/*End section Price Table*/
+/*Start section our team*/
+.our_team {
+    width:100%;
+    min-height:600px;
+    background-image:url("../image/DSCF7029.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color:#FFF;
+}
+.our_team .overlay{background:rgba(0,0,2,.6);min-height:600px}
+.our_team .overlay .h1{ margin-bottom:50px}
+.our_team .overlay .person{margin-bottom: 40px}
+.our_team .overlay .person img{width:200px;height:200px}
+/*End section our team*/
+/*Start section Supscribe */
+.supscribe{
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background-color:#EEE;
+}
+.supscribe .h1{
+    color:#888;
+    margin-bottom: 20px;
+    letter-spacing:2px 
+}
+.supscribe p{margin-bottom: 50px}
+.supscribe .form-control{ border-radius: 0; margin-right: -4px; width:300px}
+.supscribe .btn{ border-radius: 0}
+/*End section Supscripe*/
+/*Start section Statistics*/
+.stats{
+    min-height: 600px;
+    background: url("../image/tron-ball-delaney-digital.gif");
+    background-attachment: fixed;
+    background-size:cover
+}
+.stats .overlay{
+    min-height: 600px;
+    background: rgba(0,0,0,.7);
+    color:#DDD
+}
+.stats .h1{ margin-bottom: 80px; margin-top: 50px}
+.stats .info .glyphicon{font-size: 50px; margin-bottom: 20px}
+.stats .info{margin-bottom: 50px; transition: all .8s ease}
+.stats .info p{font-size: 45px; font-weight: bold}
+.stats .info span{font-size: 20px}
+/*End section Statistics*/
+/*Start section Skills*/
+.skills{  padding-top:40px; padding-top:60px}
+.skills .h1{margin-bottom: 60px}
+.skills h2{margin: 0;font-weight: bold}
+.skills .progress{ height:38px}
+.skills .progress-bar{
+    line-height: 38px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 10px
+}
+/*End section Skills*/
+/*Start section contact us*/
+.contact{
+    margin-top: 30px;
+    min-height: 500px;
+    background: url("../image/Serna8A.gif");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact .overlay{
+    background: rgba(9,9,9,.6);
+    min-height: 500px;
+    color:#DDD;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.contact .overlay .glyphicon{font-size: 35px;}
+.contact .overlay p{ margin-bottom: 60px}
+.contact .overlay textarea{ height:108px; margin-bottom: 15px}
+.contact .overlay .btn-block {height: 45px;font-size: 20px}
+.contact .overlay input[type="text"],
+.contact .overlay textarea{ background: rgba(2,2,2,.5); color:#DDD}
+/*End section contact*/
+/*Start section clients*/
+.clients{
+    padding-top:50px;
+    padding-bottom:50px;
+    background: #EEE;
+}
+.clients ul img{
+    width:100px;
+    height:50px;
+    opacity: .4;
+    transition: all .6s ease;
+}
+.clients ul img:hover{ opacity: 1; cursor: pointer}
+/*End section clients*/
+/*Start  Footer*/
+footer{ background: #252222; color:#aaa; padding-top:20px}
+footer h3{ letter-spacing: 1px; margin: 30px}
+footer a{ color:#AAA}
+footer a:hover{ color:#FFF}
+footer .columns,
+footer .icons{ overflow: hidden}
+footer .columns li{ width:33%; float: left; padding: 5px 0}
+footer .icons li{
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 2px;
+    opacity: .5;
+    transition: all .5s ease;
+    cursor: pointer
+}
+footer .icons li:hover{ opacity: 1}
+footer .icons .circle{border-radius: 50%}
+footer .img-thumbnail{
+    background: rgba(0,0,0,.2);
+    border:1px solid #444;
+    margin-bottom: 5px
+}
+footer .copyright{
+    background:#333;
+    color:#aaa;
+    padding: 15px 0;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-top: 15px
+}
+/*End  Footer*/
+/*Start  loading*/
+.loading{
+    width:100%;
+    height:100%;
+    color:#fff;
+    background: #272822;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 100000;
+}
+.loading canvas{
+  position: absolute;
+  top: calc(50% - 50px);
+  top: -webkit-calc(50% - 100px);
+  left: calc(50% - 200px);
+  left: -webkit-calc(50% - 200px);
+}
+/*End  loading*/
+/*Start   Scroll Top*/
+.scroll-top{
+    position: fixed;
+    bottom:8px;
+    right:20px;
+    color:#fff;
+    display: none;
+    cursor: pointer;
+    opacity: .5;
+    transition: all .5s ease
+ }
+.scroll-top:hover{opacity: 1}
+.scroll-top .glyphicon{ padding:10px; font-size: 25px; text-align: center}
+/*End  Scroll-top*/
+    /*-----------Start Media=------*/
+/*Smart phones and Tablets*/
+@media (max-width:767px){
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+        background-color:#E41B17;
+        color:#fff;
+        padding-left: 30px;
+    }
+    
+    /*To remove Scroll in Mobile (navbar)*/
+    .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {max-height: none}
+    /* Section supscribe*/
+    .supscribe .form-control {margin: 16px auto;width: 400px}
+    /*indicators*/
+    .testimonials .carousel-inner {min-height: 105px}
+    .testimonials .carousel-indicators li {width:40px;height: 40px}
+    .testimonials .carousel-indicators li.active {width:40px;height: 40px}
+    /*Section clients*/
+    .clients ul img {margin-bottom: 30px}
+    /*Remove Color Options in mobile*/
+    .Setting{
+        display: none;
+    }
+    
+}
+/*Small Screen*/
+@media (min-width:768px) and (max-width:991px){
+    
+}
+/*Medium Screen*/
+@media (min-width:992px) and(max-width:1199){
+    
+}
+/*Large Screen*/
+@media(min-width:1200px){
+    
+}
+    
+    /*--------------End Media---------------*/
+
+/*Animation*/
+@keyframes moving{
+    0{ top:0}
+    10%{ top:-2px}
+    20%{ top:-4px}
+    30%{ top:-6px}
+    40%{ top:-8px}
+    50%{ top:-10px}
+    60%{ top:-12px}
+    70%{ top:-14px }
+    80%{ top:-16px }
+    90%{ top:-18px}
+    100%{ top:-20px}
+}
